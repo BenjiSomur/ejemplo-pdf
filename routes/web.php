@@ -15,4 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('pdf','PdfController@invoice');
+
+Route::get('disneyplus', 'DisneyplusController@create')->name('disneyplus.create');
+Route::post('disneyplus', 'DisneyplusController@store')->name('disneyplus.store');
+Route::get('disneyplus/list','DisneyplusController@index')->name('disneyplus.index');
+Route::get('/downloadPDF/{id}','DisneyplusController@downloadPDF')->name('disneyplus.verPdf');
