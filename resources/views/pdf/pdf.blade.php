@@ -36,8 +36,8 @@
     .table .table {
       background-color: #fff;
     }
-
     </style>
+
     <h1 class="header">Información de la serie</h2>
     <table class="table table-bordered">
     <thead>
